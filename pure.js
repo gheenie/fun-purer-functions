@@ -1,1 +1,5 @@
-const funcName = require('test-name');
+function funcName() {
+    return undefined;
+}
+
+module.exports = funcName;
