@@ -1,3 +1,5 @@
+const funcName = require('test-name');
+
 describe('', () => {
     test('', () => {
         const input = undefined;
