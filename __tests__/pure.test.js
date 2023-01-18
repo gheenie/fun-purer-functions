@@ -1,4 +1,4 @@
-const funcName = require('test-name');
+const funcName = require('kata');
 
 describe('', () => {
     test('', () => {
