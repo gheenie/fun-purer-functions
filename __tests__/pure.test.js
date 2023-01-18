@@ -6,6 +6,7 @@ describe('', () => {
 
         const output = funcName(input);
 
-        expect(output).to();
+        const expected = undefined;
+        expect(output).to(expected);
     });
 });
