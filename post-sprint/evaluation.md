@@ -33,6 +33,9 @@ Ooops, looks like the `phoneNumber` isn't being printed, instead we're getting b
 
 Can you work out how to fix this issue so the actual `phoneNumber` is printed?
 
+phoneBook[userName]
+change evaluation in console.log to phoneNumber
+
 ---
 
 ### Scenario 2
@@ -49,6 +52,8 @@ it('comparing 2 arrays', () => {
 ```
 
 Just 1 of the test cases above will **pass** ✅ and another will **fail** ❌ - can you explain which way around it will be and _critically_ why?
+
+First one fails. Comparing memory ref. In toBe the array is initialised w new memory ref b4 comparison.
 
 ---
 
@@ -72,6 +77,9 @@ OK so there is a fifty-fifty chance of guessing the correct answer in the above 
 
 **See if you can go through the code line by line to work it out.**
 
+true. sortedAlpha and jumbledAlpha memory ref is the same.
+in fact jumbledAlpha itself is mutated.
+
 ### Scenario 4
 
 ```js
@@ -90,6 +98,9 @@ console.log(people);
 ```
 
 What will the above `console.log` print out ? Give reasons for your answer :)
+
+all objects now have job: 'tutor'
+map() goes into the first level of array. now we are accessing objects.
 
 ---
 
@@ -111,5 +122,7 @@ formatPeople([]);
 ```
 
 they find that the first `if` block is **not** being executed. Can you work out what is going on here ?
+
+=== is comparing memory ref.
 
 ---
